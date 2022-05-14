@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+cherrypy = "*"
+python-dotenv = "*"
+requests = "*"
+setuptools = "==59.8.0"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+types-requests = "*"
+
+[requires]
+python_version = "3.8"

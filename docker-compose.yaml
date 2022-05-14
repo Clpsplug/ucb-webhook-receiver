@@ -1,0 +1,15 @@
+version: '3.7'
+
+volumes:
+  logs:
+    driver: local
+
+services:
+  main:
+    build: ./docker
+    working_dir: /opt/code
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - .:/opt/code
+    tty: true
